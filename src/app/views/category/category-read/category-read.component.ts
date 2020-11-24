@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'src/app/models/category.model';
 
 @Component({
   selector: 'app-category-read',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryReadComponent implements OnInit {
 
-  constructor() { }
+  categories: Category[] = [{
+    id: '1',
+    name: 'Teste'
+  }]
+
+  displayedColumns = ['id', 'name', 'action'];
+
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
   }

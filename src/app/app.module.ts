@@ -14,6 +14,8 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home/home.component';
 import { CategoryReadComponent } from './views/category/category-read/category-read.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
