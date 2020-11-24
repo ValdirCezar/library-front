@@ -1,0 +1,15 @@
+mat-toolbar {
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+    font-weight: 800;
+}
