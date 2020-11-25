@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,10 @@ import { CategoryReadComponent } from './views/category/category-read/category-r
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { CategoryCreateComponent } from './views/category/category-create/category-create.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,8 @@ import { MatButtonModule } from '@angular/material/button';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CategoryReadComponent
+    CategoryReadComponent,
+    CategoryCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatListModule,
     MatCardModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <div class="content">
 
-  <button class="button" mat-stroked-button color="primary">create new category</button>
-  
+  <button class="button" (click)="navigateToCategoryCreate()" mat-stroked-button color="primary">create new category</button>
+
   <div class="mat-elevation-z8 content-table">
     <table class="table" mat-table [dataSource]="categories">
       
