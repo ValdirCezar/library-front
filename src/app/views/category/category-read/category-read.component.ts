@@ -17,7 +17,7 @@ export class CategoryReadComponent implements OnInit {
     name: ''
   }
 
-  displayedColumns = ['id', 'name', 'action'];
+  displayedColumns = ['id', 'name', 'action', 'views'];
 
   constructor(
     private service: CategoryService,

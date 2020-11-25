@@ -47,7 +47,7 @@ export class CategoryCreateComponent implements OnInit {
   }
 
   openMessageCreateError(): void {
-    this._snackBar.open('Ohh, something went wrong when creating category', 'close', {
+    this._snackBar.open('Something went wrong when creating category', 'close', {
       duration: 3500,
       horizontalPosition: 'right',
       verticalPosition: 'top'
