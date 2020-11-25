@@ -25,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CategoryUpdateComponent } from './views/category/category-update/category-update.component';
 import { CategoryDeleteComponent } from './views/category/category-delete/category-delete.component';
 import { BookReadComponent } from './views/book/book-read/book-read.component';
+import { BookCreateComponent } from './views/book/book-create/book-create.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { BookReadComponent } from './views/book/book-read/book-read.component';
     CategoryCreateComponent,
     CategoryUpdateComponent,
     CategoryDeleteComponent,
-    BookReadComponent
+    BookReadComponent,
+    BookCreateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BookCreateComponent } from './views/book/book-create/book-create.component';
 import { BookReadComponent } from './views/book/book-read/book-read.component';
 import { CategoryCreateComponent } from './views/category/category-create/category-create.component';
 import { CategoryDeleteComponent } from './views/category/category-delete/category-delete.component';
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'category/:id/books',
     component: BookReadComponent
+  },
+  {
+    path: 'books/:id/create',
+    component: BookCreateComponent
   }
 ];
 

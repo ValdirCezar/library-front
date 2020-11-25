@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Book } from 'src/app/models/book.model';
 import { BookService } from '../book.service';
 
@@ -15,6 +15,7 @@ export class BookReadComponent implements OnInit {
   displayedColumns = ['id', 'name', 'action'];
 
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private service: BookService) { }
 
@@ -23,7 +24,8 @@ export class BookReadComponent implements OnInit {
   }
 
   navigateToBookCreate(): void {
-
+    const id = this.route.snapshot.paramMap.get("id")
+    this.router.navigate([`books/${id}/create`])
   }
 
   findAllBooks(): void {
