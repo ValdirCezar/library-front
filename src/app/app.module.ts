@@ -24,6 +24,7 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { CategoryUpdateComponent } from './views/category/category-update/category-update.component';
 import { CategoryDeleteComponent } from './views/category/category-delete/category-delete.component';
+import { BookReadComponent } from './views/book/book-read/book-read.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { CategoryDeleteComponent } from './views/category/category-delete/catego
     CategoryReadComponent,
     CategoryCreateComponent,
     CategoryUpdateComponent,
-    CategoryDeleteComponent
+    CategoryDeleteComponent,
+    BookReadComponent
   ],
   imports: [
     BrowserModule,

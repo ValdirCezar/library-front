@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BookReadComponent } from './views/book/book-read/book-read.component';
 import { CategoryCreateComponent } from './views/category/category-create/category-create.component';
 import { CategoryDeleteComponent } from './views/category/category-delete/category-delete.component';
 import { CategoryReadComponent } from './views/category/category-read/category-read.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'category/delete/:id',
     component: CategoryDeleteComponent
+  },
+  {
+    path: 'category/:id/books',
+    component: BookReadComponent
   }
 ];
 
