@@ -12,6 +12,8 @@ export class BookReadComponent implements OnInit {
 
   books: Book[] = []
 
+  displayedColumns = ['id', 'name', 'action'];
+
   constructor(
     private route: ActivatedRoute,
     private service: BookService) { }
@@ -20,7 +22,11 @@ export class BookReadComponent implements OnInit {
     this.findAllBooks();
   }
 
-  findAllBooks() {
+  navigateToBookCreate(): void {
+
+  }
+
+  findAllBooks(): void {
     const id = this.route.snapshot.paramMap.get("id")
     this.service.findAllBooks(id!).subscribe(response => {
       this.books = response;
