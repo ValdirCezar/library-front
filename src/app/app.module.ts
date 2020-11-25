@@ -23,6 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { CategoryUpdateComponent } from './views/category/category-update/category-update.component';
+import { CategoryDeleteComponent } from './views/category/category-delete/category-delete.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { CategoryUpdateComponent } from './views/category/category-update/catego
     HomeComponent,
     CategoryReadComponent,
     CategoryCreateComponent,
-    CategoryUpdateComponent
+    CategoryUpdateComponent,
+    CategoryDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<form>
+    <h1>Delete Category {{ category.name }}</h1>
+    <mat-form-field class="form">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="category.name" disabled type="text" name="name" placeholder="Ex. Computing">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button mat-stroked-button (click)="delete()" color="primary">DELETE</button>
+        <button mat-stroked-button (click)="cancel()" color="warn">CANCEL</button>
+    </div>
+</form>

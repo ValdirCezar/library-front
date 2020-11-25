@@ -29,4 +29,9 @@ export class CategoryService {
     console.log('chegou' + category.id)
     return this.http.put<Category>(url, category);
   }
+
+  deleteById(id: string): Observable<Category> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Category>(url);
+  }
 }
