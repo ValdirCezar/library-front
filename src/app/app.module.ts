@@ -28,6 +28,7 @@ import { BookReadComponent } from './views/book/book-read/book-read.component';
 import { BookCreateComponent } from './views/book/book-create/book-create.component';
 import { BookDeleteComponent } from './views/book/book-delete/book-delete.component';
 import { BookUpdateComponent } from './views/book/book-update/book-update.component';
+import { ReadBookComponent } from './views/book/read-book/read-book.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { BookUpdateComponent } from './views/book/book-update/book-update.compon
     BookReadComponent,
     BookCreateComponent,
     BookDeleteComponent,
-    BookUpdateComponent
+    BookUpdateComponent,
+    ReadBookComponent
   ],
   imports: [
     BrowserModule,
