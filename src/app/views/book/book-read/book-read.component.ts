@@ -19,7 +19,7 @@ export class BookReadComponent implements OnInit {
 
   books: Book[] = []
 
-  displayedColumns = ['id', 'name', 'action'];
+  displayedColumns = ['id', 'name', 'action', 'read'];
 
   constructor(
     private router: Router,

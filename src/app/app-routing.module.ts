@@ -4,6 +4,7 @@ import { BookCreateComponent } from './views/book/book-create/book-create.compon
 import { BookDeleteComponent } from './views/book/book-delete/book-delete.component';
 import { BookReadComponent } from './views/book/book-read/book-read.component';
 import { BookUpdateComponent } from './views/book/book-update/book-update.component';
+import { ReadBookComponent } from './views/book/read-book/read-book.component';
 import { CategoryCreateComponent } from './views/category/category-create/category-create.component';
 import { CategoryDeleteComponent } from './views/category/category-delete/category-delete.component';
 import { CategoryReadComponent } from './views/category/category-read/category-read.component';
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'category/:idcat/books/update/:id',
     component: BookUpdateComponent
+  },
+  {
+    path: 'category/:idcat/books/read-book/:id',
+    component: ReadBookComponent
   }
 ];
 

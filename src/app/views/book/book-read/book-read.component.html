@@ -29,8 +29,17 @@
           <a routerLink="/category/{{ category.id }}/books/update/{{ row.id }}">
             <i class="material-icons">edit</i>
           </a>
-          <a routerLink="/category/{{ category.id }}/books/delete/{{ row.id }}">
+          <a routerLink="/category/{{ this.category.id }}/books/delete/{{ row.id }}">
             <i class="material-icons del">delete</i>
+          </a>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="read">
+        <th mat-header-cell *matHeaderCellDef>Read Book</th>
+        <td mat-cell *matCellDef="let row">
+          <a routerLink="/category/{{ this.category.id }}/books/read-book/{{ row.id }}">
+            <i class="material-icons">book</i>
           </a>
         </td>
       </ng-container>
