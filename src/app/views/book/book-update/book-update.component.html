@@ -1,1 +1,17 @@
-<p>book-update works!</p>
+<form>
+    <h1>Update Book</h1>
+    <mat-form-field class="form">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="book.title" type="text" name="title" placeholder="Ex. How to Make Cookie">
+    </mat-form-field>
+    
+    <mat-form-field class="form">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="book.description" type="text" name="description" placeholder="Ex. In this book..."></textarea>
+    </mat-form-field>
+    
+    <div class="buttons">
+        <button mat-stroked-button (click)="update()" color="primary">UPDATE</button>
+        <button mat-stroked-button (click)="cancel()" color="warn">CANCEL</button>
+    </div>
+</form>
