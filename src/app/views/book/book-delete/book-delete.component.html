@@ -1,1 +1,12 @@
-<p>book-delete works!</p>
+<form>
+    <h1>Delete Book {{ book.title }}</h1>
+    <mat-form-field class="form">
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="book.title" disabled type="text" name="title">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button mat-stroked-button (click)="delete()" color="primary">DELETE</button>
+        <button mat-stroked-button (click)="cancel()" color="warn">CANCEL</button>
+    </div>
+</form>

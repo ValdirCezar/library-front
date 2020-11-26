@@ -23,6 +23,16 @@ export class BookService {
     return this.http.post<Book>(url, book);
   }
 
+  findById(id: string): Observable<Book>{
+    const url = `${this.baseUrl}/books/${id}`;
+    return this.http.get<Book>(url);
+  }
+
+  deleteById(id: string): Observable<void>{
+    const url = `${this.baseUrl}/books/${id}`;
+    return this.http.delete<void>(url)
+  }
+
   ShowSuccessCreateBook(): void {
     this._snackBar.open('Book successfully created!', 'close', {
       duration: 4000,
@@ -33,6 +43,14 @@ export class BookService {
 
   ShowErrorCreateBook(): void {
     this._snackBar.open('Error creating book! Try later :)', 'close', {
+      duration: 4000,
+      horizontalPosition: 'right',
+      verticalPosition: 'top'
+    })
+  }
+
+  ShowSuccessDeleteBook(): void {
+    this._snackBar.open('Book successfully deleted!', 'close', {
       duration: 4000,
       horizontalPosition: 'right',
       verticalPosition: 'top'
