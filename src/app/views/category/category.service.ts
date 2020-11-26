@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { HeaderService } from 'src/app/components/templates/header/header.service';
 import { Category } from 'src/app/models/category.model';
 
 @Injectable({
@@ -10,7 +11,13 @@ export class CategoryService {
 
   baseUrl = 'http://localhost:8080/api/categories'
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private headerService: HeaderService) {
+    this.headerService.headerData = {
+      title: 'Book Category',
+      icon: 'category',
+      routeUrl: '/categories'
+    }
+   }
 
   findById(id: string): Observable<Category> {
     return this.http.get<Category>(`${this.baseUrl}/${id}`)

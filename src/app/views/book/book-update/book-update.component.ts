@@ -36,11 +36,7 @@ export class BookUpdateComponent implements OnInit {
   update(): void {
     this.service.updateById(this.book).subscribe(() => {
       this.service.ShowSuccessUpdateBook();
-    }), console.error(
-      this.router.navigate([`/category/${this.idCategfory}/books`]),
-      this.service.ShowErrorUpdateBook()
-    );
-
+    })
   }
 
   cancel(): void {

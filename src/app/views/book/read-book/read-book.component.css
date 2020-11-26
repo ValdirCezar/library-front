@@ -5,6 +5,7 @@ form {
 }
 
 h1 {
+    color: rgb(104, 100, 100);
     font-size: 2rem;
     font-weight: 400;
 }
@@ -23,7 +24,7 @@ h1 {
 }
 
 button {
-    margin-right: .5rem;
+    margin: 1rem .5rem 1rem 0;
     padding-right: 2rem;
     padding-left: 2rem;
 }

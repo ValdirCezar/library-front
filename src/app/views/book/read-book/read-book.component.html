@@ -1,12 +1,13 @@
 <form>
     <h1>Reading {{ book.title }}</h1>
     
+    <div class="buttons">
+        <button mat-stroked-button (click)="close()" color="primary">Close book</button>
+    </div>
+
     <mat-form-field class="form">
         <mat-label>Description</mat-label>
         <textarea class="text" matInput [(ngModel)]="book.description" disabled type="text" name="description" placeholder="Ex. In this book..."></textarea>
     </mat-form-field>
     
-    <div class="buttons">
-        <button mat-stroked-button (click)="close()" color="primary">Close</button>
-    </div>
 </form>

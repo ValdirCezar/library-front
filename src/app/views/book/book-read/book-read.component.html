@@ -12,19 +12,19 @@
 
       <!-- Id Column -->
       <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <th mat-header-cell *matHeaderCellDef><i class="material-icons">format_list_numbered</i></th>
         <td mat-cell *matCellDef="let row">{{row.id}}</td>
       </ng-container>
 
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Title</th>
+        <th mat-header-cell *matHeaderCellDef><i class="material-icons">title</i></th>
         <td mat-cell *matCellDef="let row">{{row.title}}</td>
       </ng-container>
 
       <!-- Name Ações -->
       <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <th mat-header-cell *matHeaderCellDef><i class="material-icons">build</i></th>
         <td mat-cell *matCellDef="let row">
           <a routerLink="/category/{{ category.id }}/books/update/{{ row.id }}">
             <i class="material-icons">edit</i>
@@ -36,7 +36,7 @@
       </ng-container>
 
       <ng-container matColumnDef="read">
-        <th mat-header-cell *matHeaderCellDef>Read Book</th>
+        <th mat-header-cell *matHeaderCellDef><i class="material-icons">visibility</i></th>
         <td mat-cell *matCellDef="let row">
           <a routerLink="/category/{{ this.category.id }}/books/read-book/{{ row.id }}">
             <i class="material-icons">book</i>

@@ -1,4 +1,6 @@
 a {
+    text-decoration: none;
+    color: rgb(77, 74, 74);
     font-size: 1.8rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
